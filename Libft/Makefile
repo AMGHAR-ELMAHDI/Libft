@@ -6,7 +6,7 @@
 #    By: eamghar <eamghar@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/25 12:13:05 by eamghar           #+#    #+#              #
-#    Updated: 2022/10/28 18:35:40 by eamghar          ###   ########.fr        #
+#    Updated: 2022/11/08 12:25:06 by eamghar          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,10 +66,10 @@ CFLAGS = -Wall -Werror -Wextra
 all :	$(NAME)
 
 bonus : $(OBJ_B)
-		ar -rsc $(NAME) $(OBJ_B)
+		ar -rc $(NAME) $(OBJ_B)
 
 $(NAME) : $(OBJ)
-		ar -rsc $(NAME) $(OBJ)
+		ar -rc $(NAME) $(OBJ)
 
 %.o : %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $<
