@@ -6,11 +6,12 @@
 /*   By: eamghar <eamghar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:59:31 by eamghar           #+#    #+#             */
-/*   Updated: 2022/10/28 18:15:45 by eamghar          ###   ########.fr       */
+/*   Updated: 2022/11/11 13:42:44 by eamghar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include<stdio.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -27,4 +28,14 @@ void	*ft_memset(void *s, int c, size_t n)
 		i++;
 	}
 	return (s);
+}
+
+int	main(void)
+{
+	int	*i;
+
+	ft_memset(i, 57, 1);
+	ft_memset((unsigned char *)i + 1, 5, 1);
+	printf("%d\n", *i);
+	return (0);
 }
