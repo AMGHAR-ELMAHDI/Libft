@@ -34,6 +34,7 @@ int	main(void)
 {
 	int	*i;
 
+	i = 0;
 	ft_memset(i, 57, 1);
 	ft_memset((unsigned char *)i + 1, 5, 1);
 	printf("%d\n", *i);
